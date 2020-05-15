@@ -1,15 +1,26 @@
 package com.base
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.baselibrary.utils.AppUtils
+import com.baselibrary.base.BaseVMActivity
+import com.baselibrary.extension.CreateViewModel
+import com.baselibrary.extension.setOnAvoidClickListener
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseVMActivity<MainViewModel>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        AppUtils.getAppVersionName(this)
 
+    override fun setLayoutId(): Int {
+        return R.layout.activity_main
     }
+
+    override fun initView(savedInstanceState: Bundle?) {
+    }
+
+    override fun initListener() {
+        btn_test1.setOnAvoidClickListener {
+            mViewModel.showTip()
+        }
+    }
+
+    override fun createViewModel(): MainViewModel = CreateViewModel()
 }
