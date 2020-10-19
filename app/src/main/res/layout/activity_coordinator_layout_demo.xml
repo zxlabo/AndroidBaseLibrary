@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a控件跟随b控件滑动而滑动" />
+
+    <Button
+        android:id="@+id/btn_appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="appbar 上下滑动显示隐藏" />
+    
+    <Button
+        android:id="@+id/btn_coll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题栏折叠" />
+    <Button
+        android:id="@+id/btn_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="头像慢慢变大" />
+
+</LinearLayout>

@@ -1,5 +1,22 @@
 ext {
-
+    //version配置
+    versions = [
+            "support-version"      : "29.0.0",
+            "junit-version"        : "4.12",
+            "rx_java_version"      : "2.2.3",
+            "rx_kotlin_version"    : "2.4.0",
+            "rx_android_version"   : "2.1.0",
+            "rx_lifecycle_version" : "3.0.0",
+            "rxbinding_version"    : "2.1.1",
+            "rxpermissions_version": "0.10.2",
+            "ok_http_version"      : "3.10.0",
+            "retrofit_version"     : "2.4.0",
+            "dagger_version"       : "2.24",
+            "glide_version"        : "4.9.0",
+            "arouter-api"          : "1.5.0",
+            "arouter-compiler"     : "1.2.2",
+            "arouter-register"     : "1.0.2",
+    ]
     android = [
             "lifecycle-viewmodel" : 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0',
             "lifecycle-extensions": 'androidx.lifecycle:lifecycle-extensions:2.2.0',
@@ -42,6 +59,13 @@ ext {
 
             "smartrefreshlayout"     : 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-x',
             "smartrefreshheader"     : 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-x'
+    ]
+    //依赖第三方配置
+    dependencies = [
+            //rxjava
+            "rxjava"                               : "io.reactivex.rxjava2:rxjava:${versions["rx_java_version"]}",
+            "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:${versions["rx_android_version"]}",
+            "rxkotlin"                             : "io.reactivex.rxjava2:rxkotlin:${versions["rx_kotlin_version"]}"
     ]
     uiLib = ui.values()
 

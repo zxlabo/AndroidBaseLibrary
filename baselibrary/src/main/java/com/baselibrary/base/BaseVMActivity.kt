@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import kotlin.properties.Delegates
 
-abstract class BaseVMActivity<T : BaseViewModel> : BaseActivity() {
+abstract class BaseVMActivity<T : BaseViewModel> : BaseToolBarActivity() {
 
     protected var mViewModel: T by Delegates.notNull()
 
@@ -17,7 +17,6 @@ abstract class BaseVMActivity<T : BaseViewModel> : BaseActivity() {
         mViewModel.activityBlock.observe(this, Observer {
             it?.block?.invoke(this)
         })
-
     }
 
 

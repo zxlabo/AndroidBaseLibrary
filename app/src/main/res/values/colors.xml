@@ -3,4 +3,178 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="home_container_font">#584c4c</color>
+    <color name="gray">#9E9595</color>
+    <color name="disabledColor">#e5e5e5</color>
+
+    <color name="main_color">#00C4B3</color>
+    <color name="select_button_color">#FFEAFBF7</color>
+    <color name="yellow_type1">#FEC407</color>
+
+    <!-- 暗金 -->
+    <color name="dark_gold">#aa8975</color>
+    <!-- 红色 -->
+    <color name="red">#e51400</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#90000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="hint_color">#cccccc</color>
+    <color name="uchoice_main_background">#f8f8f8</color>
+    <!-- navbar红色 -->
+    <color name="navbar_red">#F96650</color>
+    <color name="global_press">#f7941d</color>
+    <color name="divider">#C0C0C0</color>
+
+    <!-- 图片加载预览颜色 -->
+    <!-- pager tab strip -->
+    <color name="background_tab_pressed">#19000000</color>
+    <!-- 手机已验证 -->
+    <color name="white_70">#b2ffffff</color>
+    <color name="white_50">#7dffffff</color>
+    <color name="black_30">#4c000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_20">#32000000</color>
+
+
+
+    <!-- 查看提醒页面颜色 -->
+    <color name="home_red">#ff5052</color>
+
+    <color name="indicator_unselected">#FFDDDDDD</color>
+    <!-- 主字体颜色 -->
+    <color name="main_font_color">#373D52</color>
+
+    <color name="grey_font_color">#666666</color>
+    <!-- 轻字体颜色 -->
+
+    <color name="card_title">#373D52</color>
+
+    <color name="button_type1">#EEEFF3</color>
+
+    <color name="font_color_time">#9D9494</color>
+    <!-- app红色主色调 -->
+    <color name="primary_red_color">#F96650</color>
+    <!--app绿色主色调-->
+    <color name="primary_green_color">@color/main_color</color>
+    <color name="red_level_first">#FFFF6C65</color>
+
+    <!--app蓝色主色调-->
+    <color name="primary_blue_color">#21A6F6</color>
+    <!--app黄色主色调-->
+    <color name="primary_yellow_color">#FEE000</color>
+    <!--app黄色主色调-->
+    <color name="primary_orange_color">#FFA400</color>
+    <!-- app背景色 -->
+    <color name="background_color">#FFf8f8f8</color>
+
+    <!-- 草绿色 -->
+    <color name="grass_green_color">#62CC74</color>
+    <!-- 天空蓝 -->
+    <color name="sky_blue_color">#00AEF0</color>
+
+    <!--weight -->
+    <color name="weight_value">#34a3ef</color>
+    <color name="weight_date">#3D3333</color>
+    <color name="weight_line">#7f9E9595</color>
+
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+
+    <color name="sport_red_bg">#E95145</color>
+
+    <color name="diet_calory_color">#F88C27</color>
+    <color name="sport_calory_color">#62CC74</color>
+    <!-- 生理期日历的颜色 -->
+
+    <!-- 百分之20透明度的黑色 -->
+    <color name="twenty_percent_black">#33000000</color>
+    <color name="sixty_percent_black">#96000000</color>
+
+    <color name="common_item_pressed">#FFDDDDDD</color>
+    <color name="global_red">#FFFF3300</color>
+    <color name="login_button_disable">#FFCCCCCC</color>
+
+    <!-- Video Color -->
+    <color name="audio_progress_bg">#484847</color>
+    <color name="audio_progress_second">#a6a6a5</color>
+
+    <!-- New Sport Color-->
+    <color name="sport_light_green">#d7fdde</color>
+    <color name="sport_light_red">#1af96650</color>
+    <color name="sport_text_red">#f96650</color>
+
+    <color name="slight_gray">#ffcccccc</color>
+
+    <color name="weight_progress_red">#fffe8d60</color>
+    <color name="nice_goods_one">#69d37b</color>
+    <color name="nice_goods_two">#ffb43d</color>
+    <color name="nice_goods_three">#fe8d60</color>
+
+    <color name="nice_report_bg">#FDF3F2</color>
+    <color name="nice_report_text_color">#DAAAAA</color>
+    <color name="nice_plan_bg">#FCEFE1</color>
+    <color name="nice_plan_text_color">#937F6B</color>
+    <color name="nice_diet_bg">#F1FEF6</color>
+    <color name="nice_diet_text_color">#88B596</color>
+    <color name="nice_sport_bg">#F0FBFC</color>
+    <color name="nice_sport_text_color">#79A4AB</color>
+    <color name="nice_tools_bg">#F7F7F7</color>
+    <color name="nice_tools_title_color">#494949</color>
+    <color name="nice_tools_desc_color">#C1A485</color>
+    <color name="nice_price_color">#FF6F35</color>
+    <color name="shop_hint">#fe8d60</color>
+
+    <color name="weight_chart_color">#21A6F6</color>
+
+    <color name="fat_chart_color">#FFA400</color>
+    <color name="fat_chart_area_color">#14FFA400</color>
+
+    <color name="bone_chart_color">#54C561</color>
+    <color name="bone_chart_area_color">#1454C561</color>
+
+    <color name="baby_tall_area_color">#3362CC74</color>
+    <color name="baby_weight_area_color">#3321A6F6</color>
+    <color name="baby_head_lenght_area_color">#33FFA400</color>
+
+    <color name="bg_coupon">#FF8800</color>
+    <color name="bg_coupon_used">#999A9B</color>
+
+    <color name="common_white">@android:color/white</color>
+
+    <color name="global_navbar_bg">#F96650</color>
+    <color name="seperator_line">#dfdfdf</color>
+    <color name="timeline_nickname">#F96650</color>
+    <color name="timeline_date">#9E9595</color>
+    <color name="text_color_blue">#0C6FFE</color>
+
+    <!--新版toolbar配色,只允许Toolbar使用，其余绿色请使用primary_green_color-->
+    <color name="window_background">#f8f8f8</color>
+
+    <!-- 抽离自tb_munion_strings -->
+
+    <color name="video_green_bg">#62CC74</color>
+
+    <color name="text_third_login_text">#666666</color>
+    <color name="edit_text_dark">#373D52</color>
+
+    <color name="health_habit_item_bg">#FF5EB4EE</color>
+    <color name="health_task_item_bg">#af99d1</color>
+
+    <color name="order_complete_dialog_bg">#ff8d60</color>
+
+    <color name="sleep_record_bg">#6151b2</color>
+    <color name="sleep_record_awake">#FFA400</color>
+    <color name="sleep_record_light">#a29bda</color>
+    <color name="sleep_record_deep">#7669c0</color>
+
+    <color name="course_card_available">#a97a3d</color>
+
+    <color name="dialog_confirm_order">#979797</color>
+
+    <color name="btn_confirm_red">#F96C57</color>
+
 </resources>

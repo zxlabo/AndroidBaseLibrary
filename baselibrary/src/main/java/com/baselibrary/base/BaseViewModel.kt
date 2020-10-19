@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.baselibrary.model.LifecycleEvent
 
 open class BaseViewModel : ViewModel() {
+
      val activityBlock = MutableLiveData<LifecycleEvent>()
 
 
