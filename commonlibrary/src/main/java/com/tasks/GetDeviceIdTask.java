@@ -27,7 +27,7 @@ public class GetDeviceIdTask extends Task {
         CommonApplication app = (CommonApplication) mContext;
         mDeviceId = Settings.System.getString(mContext.getContentResolver(), Settings.System.ANDROID_ID);
         app.setDeviceId(mDeviceId);
-        LogUtils.e("GetDeviceIdTask,"+ mDeviceId+ Thread.currentThread().getName());
+        LogUtils.i("GetDeviceIdTask,"+ mDeviceId+ Thread.currentThread().getName());
 
     }
 

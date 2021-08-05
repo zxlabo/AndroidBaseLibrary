@@ -17,5 +17,6 @@ class ViewDemoActivity : AppCompatActivity() {
         btn_eraser.setOnClickListener { startActivity(Intent(this, EraserActivity::class.java)) }
         btn_bitmap.setOnClickListener { startActivity(Intent(this, BitmapCanvasActivity::class.java)) }
         btn_red.setOnClickListener { startActivity(Intent(this, RedPointActivity::class.java)) }
+        btn_weight_view.setOnClickListener { startActivity(Intent(this, WeightViewActivity::class.java)) }
     }
 }

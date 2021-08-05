@@ -9,6 +9,7 @@ import okio.Buffer
 import okio.BufferedSource
 import org.json.JSONObject
 import org.json.JSONTokener
+import retrofit2.Call
 import java.lang.Exception
 import java.net.SocketTimeoutException
 
@@ -22,18 +23,18 @@ object UserRetrofitClient : BaseRetrofitClient() {
         return "https://www.wanandroid.com/"
     }
 
-    @Throws(Exception::class)
-    override fun initErrorInterceptor(): Interceptor {
-        return Interceptor { chain: Interceptor.Chain? ->
-            val response: Response? = chain?.proceed(chain.request())
-            throw Exception("主动抛出异常")
-            response
-        }
-    }
+//    @Throws(Exception::class)
+//    override fun initErrorInterceptor(): Interceptor {
+//        return Interceptor { chain: Interceptor.Chain? ->
+//            val response: Response? = chain?.proceed(chain.request())
+//            throw Exception("主动抛出异常")
+//            response
+//        }
+//    }
 
 
 
-    suspend fun login(name: String, pwd: String): BaseResp<LoginResp> {
+     fun login(name: String, pwd: String): Call<BaseResp<LoginResp>> {
         val params = HashMap<String, String>()
         params["username"] = name
         params["password"] = pwd

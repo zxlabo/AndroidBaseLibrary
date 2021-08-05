@@ -19,6 +19,6 @@ public class InitCommonTask extends Task {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        LogUtils.e("InitCommonTask 异步线程执行的普通task"+ Thread.currentThread().getName());
+        LogUtils.i("InitCommonTask 异步线程执行的普通task"+ Thread.currentThread().getName());
     }
 }

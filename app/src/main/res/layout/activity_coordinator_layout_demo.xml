@@ -29,4 +29,16 @@
         android:layout_height="wrap_content"
         android:text="头像慢慢变大" />
 
+ <Button
+        android:id="@+id/btn_suspension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="悬停" />
+    <Button
+        android:id="@+id/btn_fit"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fitSystemWindow" />
+
 </LinearLayout>

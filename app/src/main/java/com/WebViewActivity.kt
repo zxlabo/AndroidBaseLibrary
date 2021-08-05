@@ -16,11 +16,12 @@ private val list= listOf<String>("https://blog.csdn.net/weixin_37292229/article/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setNavigatorColor(Color.parseColor("#3A3B49"))
-        Handler().postDelayed({ finish() }, 1000 * 30)
+//        Handler().postDelayed({ finish() }, 1000 * 30)
     }
 
     override fun initUrl(): String {
-        return  list[getIndex()]
+//        return  list[getIndex()]
+        return  "http://docs.google.com/gview?embedded=true&url=http://www.adobe.com/devnet/acrobat/pdfs/pdf_open_parameters.pdf"
     }
 
     fun getIndex() = java.util.Random().nextInt(list.size)

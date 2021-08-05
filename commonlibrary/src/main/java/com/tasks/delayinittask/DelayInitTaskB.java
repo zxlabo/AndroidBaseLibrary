@@ -14,6 +14,6 @@ public class DelayInitTaskB extends MainTask {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        LogUtils.e("lazy--DelayInitTaskB finished"+ Thread.currentThread().getName());
+        LogUtils.v("lazy--DelayInitTaskB finished"+ Thread.currentThread().getName());
     }
 }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_all_num"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/ic_bubble_red"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="4dp"
+        android:textColor="#ffffff"
+        android:textSize="11dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="222" />
+
+
+    <com.demo.view.ProgressLineView
+        android:id="@+id/progress_all"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_all_num"
+        app:line_color="#F5F6FA"
+        app:line_height="14dp" />
+
+    <com.demo.view.ProgressLineView
+        android:id="@+id/progress_four"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress_all"
+        app:line_color="#B9BDFD"
+        app:line_height="14dp" />
+
+    <com.demo.view.ProgressLineView
+        android:id="@+id/progress_three"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress_all"
+        app:line_color="#75A5FF"
+        app:line_height="14dp" />
+
+    <com.demo.view.ProgressLineView
+        android:id="@+id/progress_two"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress_all"
+        app:line_color="#FFD274"
+        app:line_height="14dp" />
+
+    <com.demo.view.ProgressLineView
+        android:id="@+id/progress_one"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progress_all"
+        app:line_color="#8ECBFF"
+        app:line_height="14dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="总计"
+        android:textColor="#ff697387"
+        android:textSize="12dp"
+        app:layout_constraintRight_toRightOf="@id/tv_all_num"
+        app:layout_constraintTop_toBottomOf="@id/progress_all" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_weight_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:text="孕期体重"
+        android:textColor="#ff373d52"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="单位：公斤"
+        android:textColor="#ffa8acbc"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_weight_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_weight_title"
+        app:layout_constraintTop_toTopOf="@id/tv_weight_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:text="回今天"
+        android:textColor="#ffa8acbc"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_weight_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_weight_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_weight_title">
+
+        <TextView
+            style="@style/tv_weight_left"
+            android:text="75.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="70.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="65.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="60.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="55.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="50.0" />
+
+        <TextView
+            style="@style/tv_style_weight_left"
+            android:text="45.0" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line_1"
+        android:layout_width="0.5dp"
+        android:layout_height="320dp"
+        android:background="#DFE0E5"
+        app:layout_constraintLeft_toRightOf="@id/ll_left"
+        app:layout_constraintTop_toTopOf="@id/ll_left" />
+
+    <View
+        android:id="@+id/view_line_2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="19dp"
+        android:background="#DFE0E5"
+        app:layout_constraintLeft_toRightOf="@id/view_line_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_line_1" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="50dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="100dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="150dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="200dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="250dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="300dp"
+        android:background="#F5F6FA"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2"
+        app:layout_constraintTop_toBottomOf="@id/view_line_2" />
+
+    <com.demo.activity.view.WeightLineDetailView
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toTopOf="@id/view_line_2"
+        app:layout_constraintLeft_toLeftOf="@id/view_line_2"
+        app:layout_constraintRight_toRightOf="@id/view_line_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

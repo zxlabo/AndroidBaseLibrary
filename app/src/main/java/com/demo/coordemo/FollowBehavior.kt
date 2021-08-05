@@ -15,36 +15,27 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
  *
  * version:
  */
+
 class FollowBehavior : CoordinatorLayout.Behavior<View> {
     constructor()
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
 
     /**
-     * 判断child的布局是否依赖dependence
-     * 在一个交互行为中，Dependent View 的变化决定了另一个相关 View 的行为。
-     * 在这个例子中， Button 就是 Dependent View，因为 TextView 跟随着它。
-     * 实际上 Dependent View 就相当于我们前面介绍的被观察者
+     * desc：这个方法在对界面进行布局时至少会调用一次，用来确定本次交互行为中的 Dependent View被观察者。
+     * 返回true表示依赖，false不依赖。
+     * dependency：表示被观察者view
      */
-    override fun layoutDependsOn(
-        parent: CoordinatorLayout,
-        child: View,
-        dependency: View
-    ): Boolean {
+    override fun layoutDependsOn(parent: CoordinatorLayout, child: View,  dependency: View ): Boolean {
         return dependency is Button
     }
 
-
     /**
-    *  当Dependent View发生变化时，这个方法会被调用。
-     * child相当于本次的观察者。
+     * 当dependency被观察者发生变化时，这个方法会被调用。
+     * 参数中的child相当于本次交互行为中的观察者，观察者可以在这个方法中对被观察者的变化做出响应，从而完成一次交互行为。
      */
-    override fun onDependentViewChanged(
-        parent: CoordinatorLayout,
-        child: View,
-        dependency: View
-    ): Boolean {
-        child.x=dependency.x
-        child.y=dependency.y+100
+    override fun onDependentViewChanged(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
+        child.x=dependency.x+100
+        child.y=dependency.y-100
         return true
     }
 

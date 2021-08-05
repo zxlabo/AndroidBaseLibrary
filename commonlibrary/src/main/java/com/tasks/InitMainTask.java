@@ -22,6 +22,6 @@ public class InitMainTask extends MainTask {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        LogUtils.e("InitMainTask 主线程执行的task" + Thread.currentThread().getName());
+        LogUtils.i("InitMainTask 主线程执行的task" + Thread.currentThread().getName());
     }
 }

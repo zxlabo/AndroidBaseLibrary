@@ -34,9 +34,9 @@ open class CommonApplication : BaseApplication() {
             .addTask(BlockCanaryTask())
             .start()
         dispatcher.await()
-        LogUtils.e("CommonApplication await")
+        LogUtils.i("CommonApplication await")
         DelayInitDispatcher().addTask(DelayInitTaskA()).addTask(DelayInitTaskB()).start()
-        LogUtils.e("CommonApplication onCreate end")
+        LogUtils.i("CommonApplication onCreate end")
     }
 
     /**

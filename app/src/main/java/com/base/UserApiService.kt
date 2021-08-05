@@ -1,5 +1,6 @@
 package com.base
 
+import retrofit2.Call
 import retrofit2.http.FieldMap
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
@@ -15,6 +16,7 @@ interface UserApiService {
 
     @FormUrlEncoded
     @POST("user/login")
-    suspend fun login(@FieldMap params: HashMap<String, String>): BaseResp<LoginResp>
+     fun login(@FieldMap params: HashMap<String, String>): Call<BaseResp<LoginResp>>
+//    suspend fun login(@FieldMap params: HashMap<String, String>): BaseResp<LoginResp>
 
 }

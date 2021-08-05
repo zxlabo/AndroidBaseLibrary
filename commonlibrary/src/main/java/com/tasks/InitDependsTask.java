@@ -23,7 +23,7 @@ public class InitDependsTask extends Task {
     @Override
     public void run() {
         CommonApplication app = (CommonApplication) mContext;
-        LogUtils.e("InitDependsTask，需要在getDeviceId之后执行，deviceId："+app.getDeviceId()+ Thread.currentThread().getName());
+        LogUtils.i("InitDependsTask，需要在getDeviceId之后执行，deviceId："+app.getDeviceId()+ Thread.currentThread().getName());
     }
 
 }

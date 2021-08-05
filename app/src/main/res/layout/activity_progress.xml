@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.demo.view.ProgressActivity">
+<Button
+    android:id="@+id/btn_event"
+    android:text="发送事件"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:lineSpacingExtra="8dp"
+        android:text="腹痛腹胀是典型的经前综合症的一种症状, 主要是由于月经前激素及血清素波动导致, 清淡饮食、充足睡眠、缓解压力、有助于缓解。"
+        android:textColor="#ff373d52"
+        android:textSize="14dp" />
+
+    <com.demo.view.UnderlinedTextView
+        android:id="@+id/tv_demo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:lineSpacingExtra="8dp"
+        android:text="腹痛腹胀是典型的经前综合症的一种症状, 主要是由于月经前激素及血清素波动导致, 清淡饮食、充足睡眠、缓解压力、有助于缓解。"
+        android:textColor="#ff373d52"
+        android:textSize="14dp" />
+<com.demo.view.ProgressCircleView
+    android:layout_width="150dp"
+    android:layout_height="150dp"/>
+
+
+</LinearLayout>

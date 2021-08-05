@@ -2,7 +2,6 @@ package com.baselibrary.utils.launchstarter;
 
 import android.os.Looper;
 import android.os.MessageQueue;
-import android.util.Log;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -17,13 +16,10 @@ public class DelayInitDispatcher {
     private MessageQueue.IdleHandler mIdleHandler = new MessageQueue.IdleHandler() {
         @Override
         public boolean queueIdle() {
-            Log.e("lazy", "queueIdle");
             if (mDelayTasks.size() > 0) {
                 Task task = mDelayTasks.poll();
-                Log.e("lazy", "task");
                 new DispatchRunnable(task).run();
             }
-            Log.e("lazy", mDelayTasks.size() + "");
             return !mDelayTasks.isEmpty();
         }
     };

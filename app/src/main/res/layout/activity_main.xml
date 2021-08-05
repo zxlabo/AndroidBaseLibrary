@@ -1,22 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.demo.main.MainActivity">
+    android:background="@color/white"
+    android:fillViewport="true">
 
-    <Button
-        android:id="@+id/btn_test1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="test1" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.demo.main.MainActivity">
 
-    <Button
-        android:id="@+id/btn_web"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="webview" />
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxEms="6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_test">
+
+            <TextView
+                android:id="@+id/tv_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RecyclerView"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_recyclerview_1"
+                style="@style/style_btn_main"
+                android:text="悬浮置顶的recyclerview"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_recycler_view" />
+
+            <Button
+                android:id="@+id/btn_layout_manager"
+                style="@style/style_btn_main"
+                android:text="自定义LayoutManager"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/btn_recyclerview_1"
+                app:layout_constraintTop_toTopOf="@id/btn_recyclerview_1" />
+
+            <Button
+                android:id="@+id/btn_snap_helper"
+                style="@style/style_btn_main"
+                android:text="SnapHelper"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/btn_layout_manager"
+                app:layout_constraintTop_toTopOf="@id/btn_recyclerview_1" />
+
+            <Button
+                android:id="@+id/btn_diff_utils"
+                style="@style/style_btn_main"
+                android:text="diff_util"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_snap_helper" />
+
+            <Button
+                android:id="@+id/btn_recy"
+                style="@style/style_btn_main"
+                android:text="recy click"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toRightOf="@id/btn_diff_utils"
+                app:layout_constraintTop_toBottomOf="@id/btn_snap_helper" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cl_1">
+
+            <TextView
+                android:id="@+id/tv_x5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="webview"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_pdf"
+                android:text="加载pdf"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_x5"
+                style="@style/style_btn_main_2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cl_2">
+
+            <TextView
+                android:id="@+id/tv_jetpcak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="tv_jetpcak"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_room"
+                android:text="btn_room"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_jetpcak"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_work"
+                android:text="WorkManager"
+                app:layout_constraintLeft_toRightOf="@id/btn_room"
+                app:layout_constraintTop_toBottomOf="@id/tv_jetpcak"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_livedata"
+                android:text="btn_livedata"
+                app:layout_constraintLeft_toRightOf="@id/btn_work"
+                app:layout_constraintTop_toBottomOf="@id/tv_jetpcak"
+                style="@style/style_btn_main_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cl_3">
+
+            <TextView
+                android:id="@+id/tv_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="fragment"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_fragment"
+                android:text="fragment"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_fragment"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_vp"
+                android:text="viewpager"
+                app:layout_constraintLeft_toRightOf="@id/btn_fragment"
+                app:layout_constraintTop_toBottomOf="@id/tv_fragment"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_vp2"
+                android:text="viewpager2"
+                app:layout_constraintLeft_toRightOf="@id/btn_vp"
+                app:layout_constraintTop_toBottomOf="@id/tv_fragment"
+                style="@style/style_btn_main_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cl_4">
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_coroutine"
+                android:text="协程"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_other"
+                style="@style/style_btn_main_2" />
+            <Button
+                android:id="@+id/btn_address"
+                android:text="地址选择器"
+                app:layout_constraintLeft_toRightOf="@id/btn_coroutine"
+                app:layout_constraintTop_toBottomOf="@id/tv_other"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_rich_text"
+                android:text="富文本"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_coroutine"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_glide"
+                android:text="glide"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_rich_text"
+                app:layout_constraintTop_toTopOf="@id/btn_rich_text"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_img"
+                android:text="图片优化"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_glide"
+                app:layout_constraintTop_toTopOf="@id/btn_glide"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:text="menu"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_img"
+                app:layout_constraintTop_toTopOf="@id/btn_img"
+                style="@style/style_btn_main_2" />
+
+
+            <Button
+                android:id="@+id/btn_view_flipper"
+                android:text="ViewFlipper"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_menu"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_progress"
+                android:text="progress"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_view_flipper"
+                app:layout_constraintTop_toTopOf="@id/btn_view_flipper"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_cons"
+                android:text="constraint"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_progress"
+                app:layout_constraintTop_toTopOf="@id/btn_progress"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_leak"
+                android:text="内存泄漏"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_view_flipper"
+                style="@style/style_btn_main_2" />
+
+            <Button
+                android:id="@+id/btn_heart"
+                android:text="heart"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_leak"
+                app:layout_constraintTop_toBottomOf="@id/btn_view_flipper"
+                style="@style/style_btn_main_2" />
+            <Button
+                android:id="@+id/btn_media"
+                android:text="播放音频"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/btn_heart"
+                app:layout_constraintTop_toBottomOf="@id/btn_view_flipper"
+                style="@style/style_btn_main_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

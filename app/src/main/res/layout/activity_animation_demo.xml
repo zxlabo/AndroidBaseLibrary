@@ -7,42 +7,105 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.demo.activity.anim.AnimationDemoActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="160dp"
+    android:background="@color/text_color_blue"
+    android:layout_height="160dp">
+    <ImageView
+        android:id="@+id/img_scale"
+        android:layout_width="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_bubble_red" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="共享元素动画" />
+
+    <Button
+        android:id="@+id/btn_layout_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="layout_animation"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_view_property_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="view_property_animator"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_frame"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="帧动画" />
 
     <Button
         android:id="@+id/btn_tween"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="补间动画" />
 
     <Button
         android:id="@+id/btn_value"
-        android:layout_marginTop="10dp"
-        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ValueAnimator" />
+        android:layout_marginTop="10dp"
+        android:text="ValueAnimator"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_object"
-        android:layout_marginTop="10dp"
-        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ObjectAnimator" />
+        android:layout_marginTop="10dp"
+        android:text="ObjectAnimator"
+        android:textAllCaps="false" />
+
     <Button
         android:id="@+id/btn_interpolator"
-        android:layout_marginTop="10dp"
-        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="插值器Interpolator" />
+        android:layout_marginTop="10dp"
+        android:text="插值器Interpolator"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="view_group_layout_transition"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="state_list_animator"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="show_hide"
+        android:textAllCaps="false" />
 
 </LinearLayout>

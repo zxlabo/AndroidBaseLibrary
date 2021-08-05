@@ -40,4 +40,12 @@ public class ViewUtil {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (spValue * fontScale);
     }
+
+    /*
+     * 得到屏幕的宽度
+     */
+    public static int getScreenWidth(Context context) {
+        return context.getResources().getDisplayMetrics().widthPixels;
+    }
+
 }

@@ -7,7 +7,12 @@ import com.base.BaseResp
 import com.base.LoginResp
 import com.base.UserRetrofitClient
 import com.baselibrary.base.BaseViewModel
+import com.baselibrary.base.SingleLiveEvent
+import io.reactivex.Single
 import kotlinx.coroutines.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 /**
  * author : Naruto
@@ -16,20 +21,33 @@ import kotlinx.coroutines.*
  * version:
  */
 class MainViewModel : BaseViewModel() {
+
+    val mName = MutableLiveData<String>()
+//    by lazy {
+//        SingleLiveEvent<String>()
+
+    //    }
+//    init {
+//        mName.value = "oncreate"
+//    }
+
     val api by lazy {
         UserRetrofitClient.apiService
     }
-    fun loadData() {
-        try {
-            safeLaunch({
-                UserRetrofitClient.login(
-                    "123456labozx",
-                    "123456zx"
-                )
-            }, { data.value = it })
-        } catch (e: Exception) {
-            Log.e("====",e.toString())
-        }
+
+    fun getData() {
+        UserRetrofitClient.login("", "").enqueue(object : Callback<BaseResp<LoginResp>> {
+            override fun onFailure(call: Call<BaseResp<LoginResp>>, t: Throwable) {
+
+            }
+
+            override fun onResponse(  call: Call<BaseResp<LoginResp>>, response: Response<BaseResp<LoginResp>>) {
+
+
+            }
+
+        })
+
     }
 
 
@@ -43,7 +61,7 @@ class MainViewModel : BaseViewModel() {
                 withContext(Dispatchers.IO) { request().dataConvert() }.apply(onSuccess)
                     ?: throw Exception("暂无数据,请稍后重试")
             } catch (e: Exception) {
-               Log.e("====",e.toString())
+                Log.e("====", e.toString())
             } finally {
 
             }

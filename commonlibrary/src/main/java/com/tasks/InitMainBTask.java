@@ -18,6 +18,6 @@ public class InitMainBTask extends MainTask {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        LogUtils.e("InitMainBTask 主线程执行的task" + Thread.currentThread().getName());
+        LogUtils.i("InitMainBTask 主线程执行的task" + Thread.currentThread().getName());
     }
 }

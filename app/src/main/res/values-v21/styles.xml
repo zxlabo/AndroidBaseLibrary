@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shareTheme" parent="AppTheme">
+        <!-- 设置开启转场动画-->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+</resources>

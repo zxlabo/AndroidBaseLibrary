@@ -11,7 +11,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import okhttp3.internal.http.HttpDate;
 
 /**
  * <pre>
@@ -1808,15 +1807,15 @@ public final class TimeUtils {
         return offsetServerTimeMills + System.currentTimeMillis();
     }
 
-    public static void calOffsetServerTimeAndSave(String strDate) {
-        if (TextUtils.isEmpty(strDate)) {
-            return;
-        }
-        Date serverDate = HttpDate.parse(strDate);
-        if (serverDate == null) {
-            return;
-        }
-        long dateServerMills = serverDate.getTime();
-        offsetServerTimeMills = dateServerMills - System.currentTimeMillis();
-    }
+//    public static void calOffsetServerTimeAndSave(String strDate) {
+//        if (TextUtils.isEmpty(strDate)) {
+//            return;
+//        }
+//        Date serverDate = HttpDate.parse(strDate);
+//        if (serverDate == null) {
+//            return;
+//        }
+//        long dateServerMills = serverDate.getTime();
+//        offsetServerTimeMills = dateServerMills - System.currentTimeMillis();
+//    }
 }

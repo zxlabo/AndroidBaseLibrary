@@ -34,6 +34,7 @@ class BaseActivityLifecycle : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     public fun onCreate() {
         showLog(TAG, "onCreate")
+
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)

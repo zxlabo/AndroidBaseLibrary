@@ -43,10 +43,10 @@ abstract class BaseRetrofitClient {
         initHeadInterceptor()?.let {
             client.addInterceptor(it)
         }
-        initErrorInterceptor()?.let {
-            client.addInterceptor(it)
-        }
-        client.addInterceptor(getResponseDateInterceptor())
+//        initErrorInterceptor()?.let {
+//            client.addInterceptor(it)
+//        }
+//        client.addInterceptor(getResponseDateInterceptor())
         return client.build()
     }
 
@@ -65,17 +65,17 @@ abstract class BaseRetrofitClient {
         return this
     }
 
-    private fun getResponseDateInterceptor(): Interceptor {
-        return Interceptor {
-            try {
-                val response = it.proceed(it.request())
-                TimeUtils.calOffsetServerTimeAndSave(response.header("date"))
-                response
-            } catch (e: SocketTimeoutException) {
-                it.proceed(it.request())
-            }
-        }
-    }
+//    private fun getResponseDateInterceptor(): Interceptor {
+//        return Interceptor {
+//            try {
+//                val response = it.proceed(it.request())
+//                TimeUtils.calOffsetServerTimeAndSave(response.header("date"))
+//                response
+//            } catch (e: SocketTimeoutException) {
+//                it.proceed(it.request())
+//            }
+//        }
+//    }
 
     abstract fun getBaseUrl(): String
 
