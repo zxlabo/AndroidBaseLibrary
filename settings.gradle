@@ -1,6 +1,3 @@
 include ':app', ':baselibrary', ':commonlibrary'
-//setBinding(new Binding([gradle: this]))
-//evaluate(new File(
-//  settingsDir
-//))
 rootProject.name='AndroidBaseLibrary'
+include ':common_utils'
