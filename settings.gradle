@@ -1,3 +1,2 @@
 include ':app', ':baselibrary', ':commonlibrary'
 rootProject.name='AndroidBaseLibrary'
-include ':common_utils'

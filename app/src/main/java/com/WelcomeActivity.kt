@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.base.R
@@ -16,12 +15,12 @@ import com.demo.main.MainActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 
+
 class WelcomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
-
         btn_main.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }

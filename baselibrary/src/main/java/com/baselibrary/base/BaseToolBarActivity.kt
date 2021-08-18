@@ -20,6 +20,7 @@ import com.google.android.material.appbar.AppBarLayout
  * version:
  */
 open class BaseToolBarActivity : BaseLifecycleActivity() {
+
     private var statusBarHeight = 0
     private var toolbar: Toolbar? = null
     private var appbar: AppBarLayout? = null

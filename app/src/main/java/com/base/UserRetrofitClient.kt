@@ -1,17 +1,7 @@
 package com.base
 
 import com.baselibrary.http.BaseRetrofitClient
-import com.baselibrary.utils.TimeUtils
-import okhttp3.Interceptor
-import okhttp3.Response
-import okhttp3.ResponseBody
-import okio.Buffer
-import okio.BufferedSource
-import org.json.JSONObject
-import org.json.JSONTokener
 import retrofit2.Call
-import java.lang.Exception
-import java.net.SocketTimeoutException
 
 object UserRetrofitClient : BaseRetrofitClient() {
 

@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
-        android:name="com.main.AppApplication"
+        android:name="com.AppApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,30 +23,27 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.demo.main.MainActivity" />
+        <activity android:name="com.SplashActivity"></activity>
         <activity
             android:name="com.WelcomeActivity"
-            android:theme="@style/Splash" >
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    </activity>
-
-        <activity android:name="com.plugin.PluginActivity2"></activity>
-        <activity android:name="com.hook.StubActivity" />
-        <activity android:name="com.hook.hook1.HookActivityV1">
-
         </activity>
+        <activity android:name="com.demo.main.MainActivity" />
+        <activity android:name="com.plugin.PluginActivity2" />
+        <activity android:name="com.hook.StubActivity" />
+        <activity android:name="com.hook.hook1.HookActivityV1"></activity>
         <activity android:name="com.hook.hook3.Hook5Activity" />
         <activity android:name="com.hook.hook3.Hook4Activity" />
         <activity android:name="com.hook.hook3.Hook3Activity" />
-        <activity android:name="com.plugin.PluginActivityV1"></activity>
+        <activity android:name="com.plugin.PluginActivityV1" />
         <activity android:name="com.hook.HookActivity2" />
         <activity android:name="com.demo.other.MediaActivity" />
         <activity android:name="com.demo.coordemo.SuspensionActivity" />
-
         <activity android:name="com.demo.kotlin.CoroutineActivity" />
         <activity android:name="com.demo.activity.RegionSelectActivity" />
         <activity android:name="com.demo.activity.view.ViewDemoActivity" />
