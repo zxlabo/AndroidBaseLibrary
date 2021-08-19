@@ -67,8 +67,6 @@
             android:name="com.demo.other.MyIntentService"
             android:exported="false" />
 
-        <activity android:name="com.demo.leak.LeakActivity" />
-        <activity android:name="com.demo.leak.LeakCanaryActivity" />
         <activity
             android:name="com.demo.coordemo.FitSystemWindowActivity"
             android:label="fitsystem" />

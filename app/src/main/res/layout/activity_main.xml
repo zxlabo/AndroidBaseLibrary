@@ -10,8 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.demo.main.MainActivity">
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/btn_test"
@@ -186,6 +185,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/cl_4">
@@ -294,6 +294,5 @@
                 app:layout_constraintTop_toBottomOf="@id/btn_view_flipper"
                 style="@style/style_btn_main_2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -7,11 +7,10 @@ import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.Spanned
 import android.text.style.StyleSpan
-import android.util.Log
+import androidx.activity.viewModels
 import com.alibaba.android.arouter.launcher.ARouter
 import com.base.R
 import com.baselibrary.base.BaseVMActivity
-import com.baselibrary.extension.CreateViewModel
 import com.baselibrary.extension.setOnAvoidClickListener
 import com.demo.RichTextActivity
 import com.demo.activity.CommonPdfActivity
@@ -26,7 +25,6 @@ import com.demo.jetpack.LiveDataActivity
 import com.demo.jetpack.room.RoomActivity
 import com.demo.jetpack.workmanager.WorkActivity
 import com.demo.kotlin.CoroutineActivity
-import com.demo.leak.LeakActivity
 import com.demo.other.MediaActivity
 import com.demo.other.MenuActivity
 import com.demo.other.ViewFlipperActivity
@@ -39,27 +37,16 @@ import java.util.regex.Pattern
 
 class MainActivity : BaseVMActivity<MainViewModel>() {
 
+    override val mVm: MainViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initListener()
-        Log.e("====", "onCreate")
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        Log.e("====", "onSaveInstanceState")
-    }
-
-    override fun onNewIntent(intent: Intent?) {
-        super.onNewIntent(intent)
-        Log.e("====", "onNewIntent")
-    }
-
-    override fun createViewModel(): MainViewModel = CreateViewModel()
 
     private fun initListener() {
-
         btn_test.setOnAvoidClickListener {
             ARouter.getInstance().build("/shop/order").navigation();
         }
@@ -79,7 +66,6 @@ class MainActivity : BaseVMActivity<MainViewModel>() {
             startActivity(Intent(this, HeartActivity::class.java))
         }
         btn_leak.setOnAvoidClickListener {
-            startActivity(Intent(this, LeakActivity::class.java))
         }
         btn_livedata.setOnAvoidClickListener {
             startActivity(Intent(this, LiveDataActivity::class.java))
@@ -142,6 +128,8 @@ class MainActivity : BaseVMActivity<MainViewModel>() {
 
     }
 
+
+
     private fun setBoldText(strMsg: String) {
         var str = strMsg
         val pa = "(\\$).*?(\\$)"
@@ -164,6 +152,7 @@ class MainActivity : BaseVMActivity<MainViewModel>() {
         stringBuilder.append(str)
         btn_test.text = stringBuilder
     }
+
 
 
 }
