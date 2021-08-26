@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.annotation.LayoutRes
 import com.base.R
 import com.baselibrary.utils.recyclerview.BaseRecyclerViewAdapter
-import com.baselibrary.utils.recyclerview.BaseViewHolder
+import com.ui.adapter.CommonViewHolder
 
 /**
  * author : Naruto
@@ -54,7 +54,7 @@ class MyAdapter(context: Context) : BaseRecyclerViewAdapter<DetailBean, MyHolder
 }
 
 class MyHolder(parent: ViewGroup, @LayoutRes res: Int, mOnClickListener: View.OnClickListener) :
-    BaseViewHolder(parent, res) {
+    CommonViewHolder(parent, res) {
     var mTvName: TextView? = null
 
     init {

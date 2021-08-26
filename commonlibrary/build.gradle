@@ -41,9 +41,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api project(path: ':baselibrary')
-    // release：项目中实现了线上监控体系的时候去使用
-//    api 'com.github.markzhai:blockcanary-android:1.5.0'
-
     // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
     debugApi 'com.github.markzhai:blockcanary-android:1.5.0'
     releaseApi 'com.github.markzhai:blockcanary-no-op:1.5.0'

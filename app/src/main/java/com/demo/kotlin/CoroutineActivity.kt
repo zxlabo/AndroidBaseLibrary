@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.base.R
-import com.baselibrary.utils.ext.setOnAvoidClickListener
+import com.utils.ext.setOnAvoidClickListener
 import com.demo.main.MainViewModel
 import kotlinx.android.synthetic.main.activity_coroutine.*
 import kotlinx.coroutines.*

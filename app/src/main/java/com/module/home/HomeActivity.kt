@@ -4,8 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.base.databinding.ActivityHomeBinding
 import com.baselibrary.base.BaseVmActivity
-import com.baselibrary.utils.ext.inflate
-import com.baselibrary.utils.ext.inflateView
+import com.utils.ext.inflate
 
 class HomeActivity : BaseVmActivity<HomeVm>() {
 

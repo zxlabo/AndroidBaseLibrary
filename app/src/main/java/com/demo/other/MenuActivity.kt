@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.base.R
-import com.baselibrary.utils.ext.setOnAvoidClickListener
-import com.baselibrary.utils.ext.showToast
+import com.utils.ext.setOnAvoidClickListener
+import com.utils.ext.showToast
 import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity : AppCompatActivity() {

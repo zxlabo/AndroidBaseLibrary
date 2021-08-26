@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.work.*
 import com.base.R
-import com.baselibrary.utils.ext.setOnAvoidClickListener
+import com.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_work.*
 
 class WorkActivity : AppCompatActivity() {

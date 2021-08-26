@@ -11,8 +11,7 @@ import androidx.activity.viewModels
 import com.alibaba.android.arouter.launcher.ARouter
 import com.base.databinding.ActivityMainBinding
 import com.baselibrary.base.BaseVmActivity
-import com.baselibrary.utils.ext.inflate
-import com.baselibrary.utils.ext.setOnAvoidClickListener
+import com.utils.ext.setOnAvoidClickListener
 import com.demo.RichTextActivity
 import com.demo.activity.CommonPdfActivity
 import com.demo.activity.PDF_URL_KEY
@@ -32,6 +31,7 @@ import com.demo.other.ViewFlipperActivity
 import com.demo.view.HeartActivity
 import com.demo.view.ProgressActivity
 import com.recy.*
+import com.utils.ext.inflate
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 

@@ -14,8 +14,8 @@ import android.webkit.*
 import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import com.baselibrary.base.BaseApplication
-import com.baselibrary.base.BaseToolBarActivity
-import com.baselibrary.utils.ext.showToast
+import com.ui.activity.BaseToolBarActivity
+import com.utils.ext.showToast
 import kotlinx.android.synthetic.main.common_web_view.*
 import org.json.JSONException
 import org.json.JSONObject

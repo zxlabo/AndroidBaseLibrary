@@ -2,7 +2,7 @@ package com.demo.coordemo
 
 import android.os.Bundle
 import com.base.R
-import com.baselibrary.base.BaseLifecycleActivity
+import com.ui.activity.BaseLifecycleActivity
 import kotlinx.android.synthetic.main.activity_app_bar_demo.*
 
 class AppBarDemoActivity : BaseLifecycleActivity() {

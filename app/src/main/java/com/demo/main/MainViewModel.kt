@@ -7,8 +7,6 @@ import com.base.BaseResp
 import com.base.LoginResp
 import com.base.UserRetrofitClient
 import com.baselibrary.base.BaseViewModel
-import com.baselibrary.base.SingleLiveEvent
-import io.reactivex.Single
 import kotlinx.coroutines.*
 import retrofit2.Call
 import retrofit2.Callback

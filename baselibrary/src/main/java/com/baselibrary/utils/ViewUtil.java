@@ -33,19 +33,9 @@ public class ViewUtil {
         return (int) (pxValue / scale + 0.5f);
     }
 
-    public static String getString(@StringRes int strId) {
-        return BaseApplication.mContext.getResources().getString(strId);
-    }
     public static float sp2px(Context context, float spValue) {
         final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
         return (spValue * fontScale);
-    }
-
-    /*
-     * 得到屏幕的宽度
-     */
-    public static int getScreenWidth(Context context) {
-        return context.getResources().getDisplayMetrics().widthPixels;
     }
 
 }

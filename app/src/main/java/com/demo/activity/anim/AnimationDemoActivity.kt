@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
 import com.base.R
-import com.baselibrary.utils.ext.setOnAvoidClickListener
+import com.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_animation_demo.*
 
 class AnimationDemoActivity : AppCompatActivity() {

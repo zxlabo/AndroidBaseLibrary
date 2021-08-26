@@ -74,5 +74,5 @@ dependencies {
     api 'org.greenrobot:eventbus:3.2.0'
     //使用 DefaultLifecycleObserver
     implementation  lifecycle.lifecycle_common_java8
-
+    api 'com.github.zxlabo:AndroidUtilLibrary:1.0.3'
 }
