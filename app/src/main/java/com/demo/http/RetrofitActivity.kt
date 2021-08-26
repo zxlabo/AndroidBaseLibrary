@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.base.Person
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_retrofit.*
 import okhttp3.OkHttpClient
 import retrofit2.Call

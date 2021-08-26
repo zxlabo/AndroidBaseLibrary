@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import com.demo.main.MainViewModel
 import kotlinx.android.synthetic.main.activity_my_fragment.*
 

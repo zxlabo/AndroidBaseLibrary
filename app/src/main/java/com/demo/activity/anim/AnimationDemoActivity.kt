@@ -1,13 +1,12 @@
 package com.demo.activity.anim
 
-import android.animation.Animator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_animation_demo.*
 
 class AnimationDemoActivity : AppCompatActivity() {

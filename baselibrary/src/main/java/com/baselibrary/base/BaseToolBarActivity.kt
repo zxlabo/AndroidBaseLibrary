@@ -3,6 +3,7 @@ package com.baselibrary.base
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import com.baselibrary.databinding.ActivityBaseBinding
@@ -89,6 +90,15 @@ open class BaseToolBarActivity : BaseLifecycleActivity() {
     open fun getToolBarColor(): Int {
         return Color.parseColor("#00C4B3")
     }
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            // 点击返回图标事件
+            android.R.id.home->{
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 }

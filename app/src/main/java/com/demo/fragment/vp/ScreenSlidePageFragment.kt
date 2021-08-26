@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import com.demo.RichTextActivity
 import kotlinx.android.synthetic.main.fragment_screen_slide_page.*
 

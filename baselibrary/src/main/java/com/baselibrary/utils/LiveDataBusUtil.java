@@ -1,4 +1,4 @@
-package com.baselibrary.jetpack.livedata;
+package com.baselibrary.utils;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,19 +12,19 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class LiveDataBus {
+public final class LiveDataBusUtil {
 
     private final Map<String, BusMutableLiveData<Object>> bus;
 
-    private LiveDataBus() {
+    private LiveDataBusUtil() {
         bus = new HashMap<>();
     }
 
     private static class SingletonHolder {
-        private static final LiveDataBus DEFAULT_BUS = new LiveDataBus();
+        private static final LiveDataBusUtil DEFAULT_BUS = new LiveDataBusUtil();
     }
 
-    public static LiveDataBus get() {
+    public static LiveDataBusUtil get() {
         return SingletonHolder.DEFAULT_BUS;
     }
 

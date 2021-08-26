@@ -1,4 +1,4 @@
-package com.baselibrary.http
+package com.baselibrary.net
 
 import com.baselibrary.BuildConfig
 import okhttp3.Interceptor

@@ -9,9 +9,10 @@ import android.text.Spanned
 import android.text.style.StyleSpan
 import androidx.activity.viewModels
 import com.alibaba.android.arouter.launcher.ARouter
-import com.base.R
-import com.baselibrary.base.BaseVMActivity
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.base.databinding.ActivityMainBinding
+import com.baselibrary.base.BaseVmActivity
+import com.baselibrary.utils.ext.inflate
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import com.demo.RichTextActivity
 import com.demo.activity.CommonPdfActivity
 import com.demo.activity.PDF_URL_KEY
@@ -35,13 +36,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Pattern
 
 
-class MainActivity : BaseVMActivity<MainViewModel>() {
+class MainActivity : BaseVmActivity<MainViewModel>() {
 
     override val mVm: MainViewModel by viewModels()
+    private val mBinding:ActivityMainBinding by inflate()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        title="首页"
+        setContentView(mBinding.root)
         initListener()
     }
 

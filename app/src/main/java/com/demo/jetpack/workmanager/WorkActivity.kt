@@ -2,15 +2,10 @@ package com.demo.jetpack.workmanager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.lifecycle.Observer
 import androidx.work.*
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
-import com.baselibrary.jetpack.livedata.LiveDataBus2
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_work.*
-import java.lang.StringBuilder
-import java.util.concurrent.TimeUnit
 
 class WorkActivity : AppCompatActivity() {
     private val tag="live_data_tag"
@@ -32,17 +27,5 @@ class WorkActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.e("====WorkActivity","onStart")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e("====WorkActivity","onResume")
-        LiveDataBus2.get().getChannel(tag,String::class.java).observe(this, Observer {
-            Log.e("====WorkActivity",it)
-        })
-    }
 
 }

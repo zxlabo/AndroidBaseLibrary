@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.base.R
-import com.baselibrary.extension.setOnAvoidClickListener
+import com.baselibrary.utils.ext.setOnAvoidClickListener
 import kotlinx.android.synthetic.main.activity_room.*
 
 class RoomActivity : AppCompatActivity() {

@@ -1,13 +1,11 @@
 package com.recy
 
 import android.os.Bundle
-import android.util.Log
-import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import com.base.R
-import com.baselibrary.jetpack.livedata.LiveDataBus
+import com.baselibrary.utils.LiveDataBusUtil
 import kotlinx.android.synthetic.main.activity_recycler_view.*
 
 class RecyclerViewActivity : AppCompatActivity() {
@@ -33,7 +31,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         rv_demo.addItemDecoration(ItemHeaderDecoration(this, list))
         adapter.dataList = list
         adapter.notifyDataSetChanged()
-        LiveDataBus.get().with("key_test", String::class.java).observe(this, Observer {
+        LiveDataBusUtil.get().with("key_test", String::class.java).observe(this, Observer {
         })
 //        smooth_view.setOnClickListener {}
     }

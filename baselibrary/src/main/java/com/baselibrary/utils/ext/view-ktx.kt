@@ -1,7 +1,7 @@
-package com.baselibrary.extension
+package com.baselibrary.utils.ext
 
 import android.view.View
-import com.baselibrary.listener.CustomClickListener
+import com.baselibrary.utils.CustomClickListener
 
 inline fun View.setOnAvoidClickListener(crossinline onSingleClick: (v: View) -> Unit) {
     this.setOnClickListener(object : CustomClickListener() {

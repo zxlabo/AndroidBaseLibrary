@@ -23,7 +23,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.SplashActivity"></activity>
+        <activity android:name="com.module.home.HomeActivity"></activity>
+        <activity android:name="com.SplashActivity" />
         <activity
             android:name="com.WelcomeActivity"
             android:theme="@style/Splash">
@@ -36,7 +37,7 @@
         <activity android:name="com.demo.main.MainActivity" />
         <activity android:name="com.plugin.PluginActivity2" />
         <activity android:name="com.hook.StubActivity" />
-        <activity android:name="com.hook.hook1.HookActivityV1"></activity>
+        <activity android:name="com.hook.hook1.HookActivityV1" />
         <activity android:name="com.hook.hook3.Hook5Activity" />
         <activity android:name="com.hook.hook3.Hook4Activity" />
         <activity android:name="com.hook.hook3.Hook3Activity" />

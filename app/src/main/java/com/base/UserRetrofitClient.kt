@@ -1,6 +1,6 @@
 package com.base
 
-import com.baselibrary.http.BaseRetrofitClient
+import com.baselibrary.net.BaseRetrofitClient
 import retrofit2.Call
 
 object UserRetrofitClient : BaseRetrofitClient() {
