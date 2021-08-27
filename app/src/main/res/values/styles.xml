@@ -11,9 +11,13 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="Splash" parent="AppCompat.FullScreen">
+<!--    <style name="Splash" parent="AppCompat.FullScreen">-->
+<!--        <item name="android:windowBackground">@drawable/bg_splash</item>-->
+<!--    </style>-->
+    <style name="Splash" parent="AppTheme">
         <item name="android:windowBackground">@drawable/bg_splash</item>
     </style>
+
     <!--AppCompat FullScreen-->
     <style name="AppCompat.FullScreen" parent="AppTheme">
         <item name="windowNoTitle">true</item>

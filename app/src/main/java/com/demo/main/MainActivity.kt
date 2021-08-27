@@ -41,13 +41,11 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
     override val mVm: MainViewModel by viewModels()
     private val mBinding:ActivityMainBinding by inflate()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun initView() {
         title="首页"
         setContentView(mBinding.root)
         initListener()
     }
-
 
     private fun initListener() {
         btn_test.setOnAvoidClickListener {
@@ -155,6 +153,7 @@ class MainActivity : BaseVmActivity<MainViewModel>() {
         stringBuilder.append(str)
         btn_test.text = stringBuilder
     }
+
 
 
 

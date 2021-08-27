@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_my_fragment.*
 class MyFragmentActivity : AppCompatActivity() {
 
     private val mFragmentList = mutableListOf<Fragment>()
+
     private var lastFragment: Fragment? = null
 
     private var mModel: MainViewModel? = null

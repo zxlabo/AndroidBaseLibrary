@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:orientation="vertical"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-<TextView
-    android:text="one"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/tv_one"
-    android:text="one"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="main" />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义view" />
+
+        <Button
+            android:id="@+id/btn_view_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义viewgroup" />
+
+        <Button
+            android:id="@+id/btn_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动画" />
+
+        <Button
+            android:id="@+id/btn_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="demo" />
+
+        <Button
+            android:id="@+id/btn_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色控制" />
+
+
+        <ImageView
+            android:id="@+id/img_ring"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

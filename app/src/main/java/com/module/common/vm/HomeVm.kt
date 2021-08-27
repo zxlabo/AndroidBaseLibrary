@@ -1,4 +1,4 @@
-package com.module.home
+package com.module.common.vm
 
 import com.baselibrary.base.BaseViewModel
 
